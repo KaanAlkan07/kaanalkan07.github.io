@@ -3,26 +3,97 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Kaan's Website</title>
   <link rel="stylesheet" href="main.css">
-  
+  <link rel="icon" type="image/png" href="Photo/hacker.jpg">
 </head>
-<body>
-  <div class="bar">I am Kaan
+
+<body> 
+  <div class="header">
+    <marquee style="font-family:Cursive;color:#fff;width:320px;margin: 100px;" behavior=alternate scrollamount="5" direction="left" onmousedown="this.stop();" onmouseup="this.start();">
+      <h1>Kaan's Website</h1>
+    </marquee>
+  </div>
+  
+  <div class="row">
+    <div class="column1" id="Personal">
+      <div style="margin-left: 5vw;">
+        <h1>Kişisel</h1>
+        <p style="font-size: x-large;"><img src="Photo/businessman.png" alt="man" class="leftphoto">  Kaan Alkan</p> 
+        <p style="font-size: x-large;"><img src="Photo/calendar.png" alt="man" class="leftphoto">07.09.2001</p>
+        <h1>İletişim</h1>
+        <p style="font-size: x-large;"><img src="Photo/email.png" alt="man" class="leftphoto">kaan07alkan@gmail.com</p> 
+        <p style="font-size: x-large;"><img src="Photo/phone.png" alt="man" class="leftphoto">0544 104 1807</p> 
+        <h1 style="margin-bottom: 0px;">Hobiler</h1>
+        <ul style="list-style-type:circle;margin-left: -3vw;font-size: x-large;margin-top: 12px;margin-bottom: 12px;">
+          <li>Satranç</li>
+          <li>Masa Tenisi</li>
+          <li>Yüzme</li>
+          <li>Koşu</li>  
+          <li>Futbol</li>
+        </ul>
+      </div>
+      <button class="button" onclick="myFunction()">Diğer sayfa</button>
+      <p style="margin-left: 5vw;margin-top: 0px;margin-bottom: 0px;">
+        <a href="https://github.com/kaanalkan07" target="_blank" style="text-decoration: none;" title="github">
+          <img src="Photo/github.png" alt="GitHub" class="github">
+        </a>
+      </p>
     </div>
-<div class="flex-container">
+    <div class="column1" id="Work" style="display: none;">
+      <p style="color: black;font-size: 2vw;margin-top: 3vw;margin-bottom: 1vw;"><img src="Photo/mouse.png" alt="mouse" class="rightphoto">Bilgisar Becerileri</p>
+      <ul style="list-style-type:circle;margin-left: -3vw;font-size: x-large;margin-bottom: 0px;margin-left: 3vw;">
+        <li>Arduino</li>
+        <li>Microsoft Powerpoint</li>
+        <li>Microsoft Word</li>  
+        <li>Java</li>
+        <li>JavaFX</li>
+        <li>Proteus</li>
+        <li>MikroC</li>
+        <li>C++</li>
+      </ul>
+      <p style="color: black;font-size: 2vw;margin-top: 2vw;margin-bottom: 1vw;"><img src="Photo/language.png" alt="language" class="rightphoto">Yabancı Dil</p>
+      <ul style="list-style-type:circle;margin-left: -3vw;font-size: x-large;margin-left: 3vw;">
+        <li>English</li>
+      </ul>
+      <button style="margin-top: 3vw;" class="button" onclick="myFunction()">Diğer sayfa</button>
+      <p style="margin-left: 5vw;">
+        <a href="https://github.com/kaanalkan07" target="_blank" style="text-decoration: none;" title="github">
+          <img src="Photo/github.png" alt="GitHub" class="github">
+        </a>
+      </p>
+    </div>
+    
+    <div class="column2">
+      <p style="color: black;font-size: 2vw;margin-top: 1vw;margin-bottom: 1vw;"><img src="Photo/graduation-hat.png" alt="graduation-hat" class="rightphoto">Eğitim</p>
+      <div class="row">
+        <div class="column3"><p>2019-devam</p></div>
+        <div class="column4"><p><strong>Marmara Üniversitesi</strong>,Teknoloji Fakültesi<br><strong>Bilgisayar Mühendisliği</strong>(3.sınıf)</p></div>
+        <div class="column3"><p>2015-2019</p></div>
+        <div class="column4"><p><strong>Borusan Asım Kocabıyık M.T.A.L.<br>Elektrik-Elektronik Teknolojisi Alanı</strong></p></div>
+      </div>
+      <p style="color: black;font-size: 2vw;margin-top: 1vw;margin-bottom: 1vw;"><img src="Photo/bag.png" alt="bag" class="rightphoto">İş Deneyimi</p>
+      <div class="row">
+        <div class="column3"><p>Temmuz-Eylül 2018</p></div>
+        <div class="column4"><p>Stajyer,<strong>Atatürk Havalimanı D.H.M.İ.</strong><br>Elektrik-Elektronik yaz stajı</p></div>
+      </div>
+      <p style="color: black;font-size: 2vw;margin-top: 1vw;margin-bottom: 1vw;"><img src="Photo/certificate.png" alt="certificate" class="rightphoto">Sertifikalar</p>
+      <div class="row">
+        <div class="column3"><p>2019</p></div>
+        <div class="column4"><p>Elektrik-Elektronik Teknolojisi Alanı<br><strong>İş Yeri Açma Belgesi</strong></p></div>
+        <div class="column3"><p>2019</p></div>
+        <div class="column4"><p><strong>Emlak Danışmanlığı</strong></p></div>
+      </div>
+    </div>
 
+    <div class="column5">
+      <h1>Hakkımda</h1>
+        <p style="text-align: justify;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores nemo facere fuga explicabo, ad soluta doloribus dolor inventore impedit numquam voluptate provident pariatur laborum magnam laboriosam accusantium repudiandae ipsum non consequatur quam recusandae voluptatem unde quidem velit? Repellendus officia temporibus veritatis error. Iste obcaecati architecto ea nihil perferendis fugit quis, quisquam magnam fugiat dolorem quia quasi dolorum blanditiis quae sit amet commodi nesciunt similique, qui incidunt. Unde laudantium perferendis neque cum expedita, quas eos inventore odit id aperiam consectetur voluptates quia iusto sunt sequi exercitationem atque, nisi fugiat! Odit, dolorum id possimus placeat iste dolore accusamus consectetur vitae aspernatur, explicabo a perspiciatis modi ipsum et nemo, fugit excepturi saepe voluptas libero pariatur? Explicabo ipsum libero qui quos voluptatum? Ratione, veritatis cum! Tempore, ullam saepe? Recusandae, non fuga labore architecto delectus eveniet sint est modi voluptatem voluptas doloremque! Placeat odio enim quaerat voluptas. Repudiandae quidem debitis qui eos, harum ipsam corporis.
+        </p>
+    </div>   
+  </div>
 
-<div class="left">sol</div>
-
-<div class="right">
-    <div class="flex c1">1</div>
-    <div class="flex c2">2</div>
-    <div class="flex c3">3</div>
-    <div class="flex c4">4</div>
-</div>
-
-</div>
+<script src="script.js"></script>
 
 </body>
 </html>
